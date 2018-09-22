@@ -1,0 +1,13 @@
+<ag-grid-angular 
+    class="ag-theme-balham"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    [enableSorting]="true"
+    [enableFilter]="true"
+    rowSelection="multiple"
+    [enableColResize]="true"
+    *ngIf="rowData.length > 0">
+</ag-grid-angular>
+<div class="fetching my-5"  *ngIf="rowData.length == 0"> 
+  <small> Fetching Symbols ...</small>
+</div>
